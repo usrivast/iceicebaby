@@ -68,7 +68,7 @@ img {
 /********************************/
 .hero {
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   left: 50%;
   z-index: 3;
   color: #fff;
@@ -84,12 +84,13 @@ img {
 
 .hero img {
   border-radius: 20px;
+  background: rgba(255,255,255,0.4);
 }
 
 .hero h1 {
   margin: 0;
   padding: 0;
-  color: #5D202D;
+  color: white;
   font-size: 40px;
   font-weight: normal;
   text-transform: lowercase;
@@ -159,15 +160,15 @@ img {
 }
 
 .fade-carousel .slides .slide-1 {
-  background-image: url('../img/slide1.jpg');
+  /*background-image: url('../img/slide1.jpg');*/
 }
 
 .fade-carousel .slides .slide-2 {
-  background-image: url('../img/slide2.jpg');
+  /*background-image: url('../img/slide2.jpg');*/
 }
 
 .fade-carousel .slides .slide-3 {
-  background-image: url('../img/slide3.jpg');
+  /*background-image: url('../img/slide3.jpg');*/
 }
 
 
@@ -1073,5 +1074,13 @@ blockquote footer, blockquote small, blockquote .small {
   .grid li {
     width: 100%;
   }
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
