@@ -68,7 +68,7 @@ img {
 /********************************/
 .hero {
   position: absolute;
-  bottom: 100px;
+  bottom: -50px;
   left: 50%;
   z-index: 3;
   color: #fff;
@@ -1076,11 +1076,29 @@ blockquote footer, blockquote small, blockquote .small {
   }
 }
 
-#myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+@media screen and (max-width: 980px) {
+  #landscapeVideo {
+    display: none;
+  }
+  #portraitVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  #portraitVideo {
+    display: none;
+  }
+  #landscapeVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 }
 
